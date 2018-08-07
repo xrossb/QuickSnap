@@ -92,8 +92,10 @@ namespace CardGames.GameLogic
 				_started = true;
 				_deck.Shuffle ();		// Return the cards and shuffle
 
+
 				FlipNextCard ();				// Flip the first card...
 				_gameTimer.Start();
+
 			}
 		}
 			
@@ -149,7 +151,9 @@ namespace CardGames.GameLogic
 
 			// stop the game...
 			_started = false;
+			
 			_gameTimer.Stop ();
+
 		}
 	
 		#region Snap Game Unit Tests
